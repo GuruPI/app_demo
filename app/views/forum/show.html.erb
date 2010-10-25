@@ -1,2 +1,4 @@
-<h1>Forum#show</h1>
-<p>Find me in app/views/forum/show.html.erb</p>
+<h1><%= h @question.title %></h1>
+<div id="question_text"><%= h @question.text %></div>
+
+<%= link_to "Responder", reply_path(@question) %>
