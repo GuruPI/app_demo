@@ -1,0 +1,7 @@
+<ul>
+  <% @questions.each do |question| %>
+    <li><%= link_to question.title, question_path(question)%></li>
+  <% end %>
+</ul>
+
+<%= link_to "Nova discussão", new_question_path %>
