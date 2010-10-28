@@ -254,3 +254,9 @@ vendor
   External libraries that the application depends on. Also includes the plugins
   subdirectory. If the app has frozen rails, those gems also go here, under
   vendor/rails/. This directory is in the load path.
+
+== Install blue-ridge
+  git submodule add -b rails3 git://github.com/dcrec1/blue-ridge.git ./vendor/plugins/blue-ridge
+  rails g blue_ridge:skeleton
+  rails g blue_ridge:javascript_spec core
+  rake spec:javascripts
